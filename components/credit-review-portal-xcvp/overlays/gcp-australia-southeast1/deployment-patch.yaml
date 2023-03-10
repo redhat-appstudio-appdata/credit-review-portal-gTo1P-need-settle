@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: credit-review-portal-xcvp
+  namespace: burrzinga-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:858c0bb9af9a9216047c5c56a88d3f9bcc66d8eb75185e1d3d2a0b397d7dd285
+        name: my-java-springboot
+        resources: {}
+status: {}
