@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: credit-review-portal-xcvp
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:gTo1P-credit-review-portal-xcvp
+      - image: quay.io/redhat-appstudio/user-workload@sha256:858c0bb9af9a9216047c5c56a88d3f9bcc66d8eb75185e1d3d2a0b397d7dd285
         name: my-java-springboot
         ports:
         - containerPort: 8081
